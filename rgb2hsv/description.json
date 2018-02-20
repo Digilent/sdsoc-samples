@@ -1,0 +1,37 @@
+{
+    "example": "Color Space Conversion - RGB/HSV",
+    "overview": "Sample application using arrays of structs. A pixel is implemented as a struct with 3 members: Red/Green/Blue or Hue/Saturation/Value. The function that performs the conversion from RGB to HSV is accelerated in hardware. The function that converts back from HSV to RGB is in software.",
+    "board": [
+        "zybo_z7_20",
+    ],
+    "os": [
+        "Linux",
+        "Standalone"
+    ],
+    "runtime": [
+        "C/C++"
+    ],
+    "accelerators": [
+        {
+            "name": "RgbToHsv",
+            "location": "top.cpp"
+        }
+    ],
+    "contributors" : [
+        {
+            "group" : "Xilinx, Inc.",
+            "url" : "http://www.xilinx.com"
+        }
+        {
+            "group" : "Digilent, Inc.",
+            "url" : "http://www.digilent.com"
+        }
+    ],
+    "revision" : [
+        {
+            "date" : "2017",
+            "version" : "1.0",
+            "description" : "Initial revision"
+        }
+    ]
+}

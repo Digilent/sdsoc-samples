@@ -1,0 +1,33 @@
+{
+    "example": "Matrix Multiplication (FreeRTOS)",
+    "overview": "FreeRTOS example implementation of a 32x32 matrix multiplication using 4-byte float values. First executes matrix mult in software \u0027mmult_golden()\u0027 function and then executes the matrix mult in hardware \u0027mmult_accel()\u0027. By default the function \u0027mmult_accel()\u0027 is marked for hardware, and you can build the project. SDSoC pragmas are used to declare the access pattern of the input matrices to be multiplied as sequential. This results in FIFO interfaces on the accelerator core.",
+    "board": [
+        "zybo_z7_20",
+    ],
+    "os": [
+        "FreeRTOS"
+    ],
+    "accelerators": [
+        {
+            "name": "mmult_accel",
+            "location": "mmult_accel.cpp"
+        }
+    ],
+    "contributors" : [
+        {
+            "group" : "Xilinx, Inc.",
+            "url" : "http://www.xilinx.com"
+        }
+        {
+            "group" : "Digilent, Inc.",
+            "url" : "http://www.digilent.com"
+        }
+    ],
+    "revision" : [
+        {
+            "date" : "2017",
+            "version" : "1.0",
+            "description" : "Initial revision"
+        }
+    ]
+}
